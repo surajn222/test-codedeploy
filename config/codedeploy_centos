@@ -1,0 +1,11 @@
+sudo apt-get update -y
+sudo apt-get install python-pip
+sudo apt-add-repository ppa:brightbox/ruby-ng  ?[the repo to get ruby2.0 from]
+sudo apt-get update -y
+sudo apt-get -y install ruby2.0 ruby-switch
+sudo ruby-switch –set ruby2.0  ?[ switch the ruby version to 2.0]
+sudo pip install awscli
+cd /home/ubuntu
+aws s3 cp s3://aws-codedeploy-us-east-1/latest/install . –region ?us-east-1
+chmod +x ./install
+sudo ./install auto 

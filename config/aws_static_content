@@ -1,0 +1,30 @@
+sudo apt-get install python-pip
+pip install awscli
+aws configure
+none
+none
+us-east-1
+none
+aws s3 ls
+mkdir -p /var/www/wordpresss
+aws s3 cp --recursive s3://wordpressapp-clvtap/html /var/www/html
+chown -R www-data:www-data wordpress
+
+config file:
+aws s3 cp s3://wordpressapp/wordpress_vhost /etc/apache2/sites-enabled/
+rm 000-default.conf
+In the conf file
+ServerName linuxdiet.com
+ServerAlias www.linuxdiet.com
+
+aws s3 sync /var/www/html/wp-content/uploads s3://wordpressapp-clvtap/html
+
+cd /etc/cron
+
+*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads s3://wordpressapp-clvtap/html
+
+a2enmod rewrite
+
+ReadWrite rule:
+conf file
+

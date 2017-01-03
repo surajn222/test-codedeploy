@@ -2,7 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /wordpress/
-    destination: /var/www/html  
+    destination: /var/www/html
+  - source: /config/000-default.conf
+    destination: /etc/apache2/sites-available
 hooks:
   BeforeInstall:
     - location: scripts/start

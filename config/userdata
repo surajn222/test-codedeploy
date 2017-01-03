@@ -7,6 +7,3 @@ wget https://aws-codedeploy-ap-south-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 
-sudo apt-get install apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-cli php7.0-cgi php7.0-gd  -y
-sudo apt-get install git
-git clone

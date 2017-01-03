@@ -1,0 +1,8 @@
+echo "# test-codedeploy" >> README.md && \
+git init && \
+git add README.md && \
+git config user.email "surajn222@gmail.com" && \
+git config user.name "Suraj Nathani" && \
+git commit -m "first commit" && \
+git remote add origin https://github.com/surajn222/test-codedeploy.git && \
+git push -u origin master
