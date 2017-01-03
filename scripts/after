@@ -3,11 +3,11 @@
 a2enmod rewrite
 sudo service apache2 restart
 
-sudo apt-get install python-pip
+sudo apt-get install python-pip -y
 pip install awscli
 aws configure set aws_access_key_id AKIAJQDSFEMNTLIHVVCA
 aws configure set aws_secret_access_key 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 
 aws configure set region ap-south-1 
 aws configure set output json
 
-*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads s3://wordpressapp-clvtap/html >> /etc/cron
+crontab -l | { cat; echo "*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads s3://wordpressapp-clvtap/html"; } | crontab -
