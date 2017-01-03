@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
-files:
-   -source:/index.html
-    destination:/var/
+hooks:
+  BeforeInstall:
+    -location:scripts/start
+     timeout:300
+     runas:root
+
