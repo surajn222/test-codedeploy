@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello world"
+sudo apt-get install apache2 -y
