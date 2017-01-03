@@ -1,8 +1,6 @@
 version: 0.0
 os: linux
-hooks:
-  BeforeInstall:
-    -location:scripts/start
-     timeout:300
-     runas:root
+files:
+  -source:/index.html
+  destination:/
 
