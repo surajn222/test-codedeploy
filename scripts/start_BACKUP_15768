@@ -1,3 +1,6 @@
 #!/bin/bash
 sudo apt-get install apache2 -y
+<<<<<<< HEAD
 sudo rm /var/www/html/index.html
+=======
+>>>>>>> 2fd6215188a484907698de3f3d501e8479e30391
