@@ -6,3 +6,4 @@ if [ -f $FILE ];
 then
    sudo rm /var/www/html/index.html
 fi
+echo "Hello world"
