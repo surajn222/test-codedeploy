@@ -1,9 +1,8 @@
 #!/bin/bash
 
 a2enmod rewrite
-sudo chmod www-data:www-data -R /var/www/html
 sudo service apache2 restart
 
-#crontab -l | { cat; echo "*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads s3://wordpressapp-clvtap/html"; } | crontab -
-
 echo "*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads/ s3://wordpressapp-clvtap/html/" >> /etc/crontab
+
+sudo chmod www-data:www-data -R /var/www/html
