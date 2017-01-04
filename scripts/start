@@ -6,8 +6,8 @@ if [ -f $FILE ];
 then
    sudo rm /var/www/html/index.html
 fi
-FILE=/etc/apache2/sites-available/000-default.conf
-if [ -f $FILE ];
-then
-  sudo rm /etc/apache2/sites-available/000-default.conf
-fi
+#FILE=/etc/apache2/sites-available/000-default.conf
+#if [ -f $FILE ];
+#then
+#  sudo rm /etc/apache2/sites-available/000-default.conf
+#fi

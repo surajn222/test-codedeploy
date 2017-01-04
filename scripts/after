@@ -3,6 +3,4 @@
 a2enmod rewrite
 sudo service apache2 restart
 
-echo "*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads/ s3://wordpressapp-clvtap/html/" >> /etc/crontab
-
 sudo chown www-data:www-data -R /var/www/html
