@@ -5,4 +5,4 @@ sudo service apache2 restart
 
 echo "*/1 * * * * root aws s3 sync /var/www/html/wp-content/uploads/ s3://wordpressapp-clvtap/html/" >> /etc/crontab
 
-sudo chmod www-data:www-data -R /var/www/html
+sudo chown www-data:www-data -R /var/www/html
