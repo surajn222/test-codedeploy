@@ -1,5 +1,6 @@
 <?php
 
-echo "Hello from $_SERVER['SERVER_ADDR']";
+echo "Hello from "
+echo $_SERVER['SERVER_ADDR'];
 
 ?>
