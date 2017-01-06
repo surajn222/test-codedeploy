@@ -1,7 +1,7 @@
 <?php
 
 echo "Hello from ";
-echo $_SERVER['SERVER_ADDR'] ;
-#echo "Changed";
+echo $_SERVER['SERVER_ADDR'];
+
 
 ?>
