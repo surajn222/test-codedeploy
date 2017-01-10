@@ -24,7 +24,12 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); 
+	
+	echo "Hello from header ";
+  echo $_SERVER['SERVER_ADDR'];
+
+	?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 

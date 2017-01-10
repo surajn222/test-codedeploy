@@ -32,6 +32,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php
+			echo "Hello from index ";
+      echo $_SERVER['SERVER_ADDR'];
+
 			if ( have_posts() ) :
 
 				/* Start the Loop */
