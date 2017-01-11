@@ -24,7 +24,12 @@ get_header(); ?>
 		</header>
 	<?php else : ?>
 	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
+		<h2 class="page-title"><?php 
+		
+			echo "Hello from ";
+      echo $_SERVER['SERVER_ADDR'];
+
+		_e( 'Posts', 'twentyseventeen' ); ?></h2>
 	</header>
 	<?php endif; ?>
 
@@ -32,8 +37,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php
-			echo "Hello from ";
-      echo $_SERVER['SERVER_ADDR'];
 
 			if ( have_posts() ) :
 
