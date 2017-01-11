@@ -24,12 +24,11 @@ get_header(); ?>
 		</header>
 	<?php else : ?>
 	<header class="page-header">
-		<h2 class="page-title"><?php 
-		
-			echo "Hello from ";
-      echo $_SERVER['SERVER_ADDR'];
-
-		_e( 'Posts', 'twentyseventeen' ); ?></h2>
+	<?php 			
+	echo "Hello from ";
+  echo $_SERVER['SERVER_ADDR'];
+?>
+		<h2 class="page-title"><?php 	_e( 'Posts', 'twentyseventeen' ); ?></h2>
 	</header>
 	<?php endif; ?>
 
